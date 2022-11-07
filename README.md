@@ -5,7 +5,7 @@ Este repositório tem por objetivo compartilhar a minha jornada de aprendizagem 
 Fazer postagens regulares de algum conteúdo novo que eu aprendi e me sinta confortável em desenvolver sozinha.
 
 ### 📚 Atualização de Skills:
-- Html 💹;
+- HTML 💹;
 - CSS 💹;
 - JavaScript 💹;
 - React 📝;
