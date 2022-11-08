@@ -2,7 +2,8 @@
 
 Este projeto foi criado usando ReactJs.
 
-Como executar 🏃
+Como executar🏃:
+
 Após clonar o projeto e instalar as dependências navegue até o diretório e utilize o comando:
 
 `yarn start` ou `npm start`
