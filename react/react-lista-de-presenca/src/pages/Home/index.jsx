@@ -29,14 +29,19 @@ function Home() {
               minute: '2-digit',
               second: '2-digit'
             })
+
           };
 
           //Adicionando todos os estudantes na lista (o que tinha antes + o atual)
           setStudents(prevState => [...prevState, newStudent]);
+
+         
     }
    
     input.value = '';
   }
+
+  console.log(students)
 
   useEffect(() => {
     fetch('https://api.github.com/users/biancaaviana')

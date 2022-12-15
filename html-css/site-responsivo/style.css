@@ -1,0 +1,366 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 62, 5%;
+}
+
+
+.container {
+    padding: 2em 1em 0;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    color: #f44336;
+}
+
+.logo span {
+    margin-left: .5em;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.nav-menu__item {
+    width: 100%;
+    padding: .5em;
+
+    list-style: none;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.nav-menu__item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu__item:hover {
+    background-color: #f44336;
+}
+
+.menu-section {
+    padding: 2em 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 1.6rem;
+}
+
+.menu-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.menu-input div {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-input input {
+    padding: 1em;
+
+    border: 1px solid rgba(128, 128, 128, 0.438);
+}
+
+.menu-input input::placeholder {
+    font-size: 1.2em;
+    color: rgba(124, 124, 124, 0.644);
+}
+
+.menu-button {
+    margin: 1.5em auto 0;
+    width: 20em;
+    padding: 1em 0;
+    
+
+    background-color: rgb(97, 96, 96);
+    border: none;
+}
+
+.menu-button a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgba(124, 124, 124, 0.144);
+}
+
+.section-subtitle {
+    padding: 1em 0;
+}
+
+.explorer-section img,
+.offers-section img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.offers-images__card {
+    margin-bottom: .75em;
+    position: relative;
+}
+
+.figcaption--position {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    color: #fff;
+}
+
+.explorer-section__card {
+    margin-bottom: 1em;
+
+    background-color: #fff;
+}
+
+.explorer-section__text {
+    padding: 1em 1em;
+}
+
+#price {
+    padding: 1em 0;
+    color: #808080ce;
+}
+
+#ticket {
+    padding: 1em 0;
+}
+
+.newsletter-container {
+    padding: 2em 1em 1em;
+
+    background-color: #6d6d6d;
+    color: #fff;
+}
+
+.newsletter-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-input input {
+    padding: 1em;
+}
+
+.newsletter-input input::placeholder {
+    font-size: 1.2em;
+
+    color: rgba(124, 124, 124, 0.644);
+}
+
+.newsletter-button {
+    margin-top: 1em;
+    padding: .5em 1em;
+    font-size: 1.2em;
+
+    background-color: #f8847c;
+    border: none;
+}
+
+.newsletter-button a {
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.contact-us {
+    margin-bottom: 1em;
+}
+
+.contact-us p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-us img {
+    margin-right: .5em
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.contact-form input::placeholder {
+    font-size: 1.2em;
+
+    color: rgba(124, 124, 124, 0.644);
+}
+
+.contact-button {
+    padding: 1em 1em;
+    font-size: 1em;
+
+    background-color: #000000;
+    border: none;
+}
+
+.contact-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+footer {
+    padding: 1em 0 2em;
+    text-align: center;
+
+    background-color: rgba(124, 124, 124, 0.144);
+}
+
+footer a {
+    color: rgba(124, 124, 124, 0.644);
+}
+
+.social-medias {
+    padding: 2em 0;
+}
+
+/* media queries */
+@media (min-width: 451px) {
+
+    .offers-section img {
+        width: 100%;
+        max-width: 1366px;
+    }
+
+    .offers-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px 8px;
+
+        align-items: center;
+    }
+
+    .offers-images__card {
+        margin: 0;
+    }
+
+    .explorer-section__card img {
+        max-width: 1366px;
+    }
+
+    .grid1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .grid4 {
+        grid-column-start: 3;
+    }
+
+    .explorer-section__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .menu-background {
+        background-image: url(images/london.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+
+        display: flex;
+    }
+
+    .menu-container {
+        margin: auto;
+    }
+
+    .menu-section {
+        background-color: #fff;
+        width: 510px;
+        height: 250px;
+
+        display: block;
+    }
+
+    .menu-input {
+        display: flex;
+        flex-direction: row;
+
+        gap: 10px;
+    }
+
+    .menu-input div {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .menu-button {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1366px) {
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .menu-background {
+        height: 100vh;
+    }
+
+    .menu-section {
+        width: 810px;
+        height: 250px;
+    }
+
+    .menu-button {
+        width: 25%;
+    }
+}
